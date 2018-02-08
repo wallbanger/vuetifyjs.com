@@ -8,6 +8,7 @@
         <v-edit-dialog
           :return-value.sync="props.item.name"
           lazy
+          @save="save"
         > {{ props.item.name }}
           <v-text-field
             slot="input"
@@ -161,6 +162,11 @@
             iron: '6%'
           }
         ]
+      }
+    },
+    methods: {
+      save: () => {
+        alert('Thank you for saving the value')
       }
     }
   }

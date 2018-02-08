@@ -1835,6 +1835,12 @@ module.exports = {
         "source": null
       },
       {
+        "name": "persistent",
+        "type": "Boolean",
+        "default": "false",
+        "source": null
+      },
+      {
         "name": "returnValue",
         "type": "Any",
         "default": "undefined",
@@ -1859,6 +1865,12 @@ module.exports = {
     "slots": [
       "default",
       "input"
+    ],
+    "events": [
+      {
+        "name": "save",
+        "value": "void"
+      }
     ]
   },
   "v-table-overflow": {
